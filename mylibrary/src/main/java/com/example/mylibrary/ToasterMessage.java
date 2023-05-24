@@ -12,7 +12,7 @@ public class ToasterMessage {
 
     }
 
-    public static void launchActivity(Context c){
+    public static void init(Context c){
 
         Intent profileIntent = new Intent();
         profileIntent.setClass(c, MainActivity.class);
