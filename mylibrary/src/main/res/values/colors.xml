@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="darkGrey">#2E2E2E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="themeColor">#26A69A</color>
+    <color name="disableButton">#707070</color>
+    <color name="backgroundcolor">#F7F7F7</color>
+    <color name="dividercolor">#E8E9EA</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="lightgrey">#95989A</color>
+    <color name="blue">#0074F0</color>
+    <color name="greydark">#A2A2A2</color>
+
+</resources>
