@@ -105,7 +105,7 @@ public class GPSTracker extends Service implements LocationListener {
 
 
                                     url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                            + latitude + "," + longitude + "&sensor=false"+ "&key=" + BuildConfig.APIKEY;
+                                            + latitude + "," + longitude + "&sensor=false"+ "&key=" +Global.APIKey;
 
 
                                     DownloadTask downloadTask = new DownloadTask();
@@ -144,7 +144,7 @@ public class GPSTracker extends Service implements LocationListener {
                                         String url;
 
                                         url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                                + latitude + "," + longitude + "&sensor=false"+ "&key=" + BuildConfig.APIKEY;
+                                                + latitude + "," + longitude + "&sensor=false"+ "&key=" +Global.APIKey;
 
 
                                         DownloadTask downloadTask = new DownloadTask();
@@ -165,7 +165,7 @@ public class GPSTracker extends Service implements LocationListener {
                                         String url;
 
                                         url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                                + latitude + "," + longitude + "&sensor=false"+ "&key="+ BuildConfig.APIKEY;
+                                                + latitude + "," + longitude + "&sensor=false"+ "&key="+ Global.APIKey;
 
 
                                         DownloadTask downloadTask = new DownloadTask();

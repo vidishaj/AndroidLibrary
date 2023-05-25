@@ -11,6 +11,7 @@ import android.net.NetworkInfo;
 public class Global {
     public static String v1EndPoint = "";
     public static String v2EndPoint = "";
+    public static String APIKey = "";
     public static String signUpURL = v1EndPoint + "/v1/signup/checkUser";
 
     public static String getOTP = v1EndPoint + "/v1/common/otp/?phone=";
