@@ -1,5 +1,7 @@
 package com.example.mylibrary;
 
+import static com.example.mylibrary.ToasterMessage.APIKey;
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Service;
@@ -105,7 +107,7 @@ public class GPSTracker extends Service implements LocationListener {
 
 
                                     url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                            + latitude + "," + longitude + "&sensor=false"+ "&key=" +Global.APIKey;
+                                            + latitude + "," + longitude + "&sensor=false"+ "&key=" +APIKey;
 
 
                                     DownloadTask downloadTask = new DownloadTask();
@@ -144,7 +146,7 @@ public class GPSTracker extends Service implements LocationListener {
                                         String url;
 
                                         url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                                + latitude + "," + longitude + "&sensor=false"+ "&key=" +Global.APIKey;
+                                                + latitude + "," + longitude + "&sensor=false"+ "&key=" +APIKey;
 
 
                                         DownloadTask downloadTask = new DownloadTask();
@@ -165,7 +167,7 @@ public class GPSTracker extends Service implements LocationListener {
                                         String url;
 
                                         url = "https://maps.googleapis.com/maps/api/geocode/json?latlng="
-                                                + latitude + "," + longitude + "&sensor=false"+ "&key="+ Global.APIKey;
+                                                + latitude + "," + longitude + "&sensor=false"+ "&key="+ APIKey;
 
 
                                         DownloadTask downloadTask = new DownloadTask();

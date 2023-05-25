@@ -1,7 +1,6 @@
 package com.example.mylibrary;
 
-import static com.example.mylibrary.Global.APIKey;
-import static com.example.mylibrary.Global.v2EndPoint;
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,7 +8,9 @@ import android.content.SharedPreferences;
 import android.widget.Toast;
 
 public class ToasterMessage {
-
+    public static String v1EndPoint = "";
+    public static String v2EndPoint = "";
+    public static String APIKey = "";
     public static SharedPreferences sharedPreferences;
     public static SharedPreferences.Editor editor;
 
@@ -31,7 +32,7 @@ public class ToasterMessage {
         sharedPreferences = c.getSharedPreferences(sharedPreference, Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
 
-        Global.v1EndPoint =v1Url;
+        v1EndPoint =v1Url;
         v2EndPoint = v2Url;
         APIKey = googleKey;
         Intent profileIntent = new Intent();
