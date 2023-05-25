@@ -1,5 +1,7 @@
 package com.example.mylibrary;
 
+import static com.example.mylibrary.Global.v2EndPoint;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -7,8 +9,8 @@ import android.widget.Toast;
 
 public class ToasterMessage {
 
-    static SharedPreferences sharedPreferences;
-    static SharedPreferences.Editor editor;
+    public static SharedPreferences sharedPreferences;
+    public static SharedPreferences.Editor editor;
 
     public static void s(Context c, String message){
 
@@ -29,6 +31,11 @@ public class ToasterMessage {
         editor = sharedPreferences.edit();
 
         Global.v1EndPoint =v1Url;
+        v2EndPoint = v2Url;
+
+        Intent profileIntent = new Intent();
+        profileIntent.setClass(c, MainActivity.class);
+        c.startActivity(profileIntent);
 
     }
 }
